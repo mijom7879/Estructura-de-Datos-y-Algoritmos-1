@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int dia, mes, anio;
+
+    cout << "Ingrese la fecha (dd mm aaaa): ";
+    cin >> dia >> mes >> anio;
+
+    // Desde 1 de enero:
+    int mesesTranscurridos = mes - 1;
+    int diasTranscurridos = dia - 1;
+
+    cout << "Han transcurrido " << mesesTranscurridos 
+         << " meses y " << diasTranscurridos 
+         << " dias desde el 1/01/" << anio << endl;
+
+    return 0;
+}
