@@ -1,0 +1,15 @@
+#include <iostream>
+#include <algorithm> // para std::reverse
+#include <string>
+using namespace std;
+
+int main() {
+    string cadena;
+
+    cout << "Ingrese una cadena: ";
+    getline(cin, cadena);
+
+    // Invertir la cadena en su lugar (sin usar memoria extra innecesaria)
+    reverse(cadena.begin(), cadena.end());
+
+    cout << "Cadena invertida: " << cadena << endl;
